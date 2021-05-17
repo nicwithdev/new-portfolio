@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/lil-icon.png" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js" defer></script>
     <title>Nicole Witherall</title>
 </head>
 <body>
@@ -17,9 +16,19 @@
             <div class="line2"></div>
         </div>
     </nav>
-    <main>
-        <section class="boardgamer slide"></section>
-        <section class="smallr slide">
+    <main class="landing">
+        <video src="./assets/landing-video.mp4" muted autoplay loop playsinline disablePictureInPicture preload="auto"></video>
+        <div class="headline">
+            <div class="smile">
+            <h1><span class="hello">Hello!</span>&nbsp;I'm <br /><span class="name">Nicole Witherall</span></h1>
+            <div class="secret-hover"><img src="./assets/smile.png" /></div>
+        </div>
+            <h2>Software Engineer | Torontonian | People Person</h2>
+        </div>
+    </main>
+    <section id="projects">
+        <div class="boardgamer slide"></div>
+        <div class="smallr slide">
             <div class="section-img">
                 <img src="./assets/smallr.png" alt="A screen capture of my projects named Smallr" />
             </div>
@@ -27,14 +36,19 @@
                 <div class="title">
                     <h2>Smallr</h2>
                 </div>
-                <p>I noticed that it's difficult to find small pets for adoption rather than purchase, so I made Smallr. Smallr was designed to help shelters and rescues showcase their small pets up for adoption. It is a full CRUD web application that allows users to browse small pets up for adoption or list a pet for adoption. Shelters must create an account to be able to create posts, as well as edit and/or delete their posts. This project is hosted on Heroku.</p>
-                <p>Node.js, Express.js, MongoDB, Mongoose, Passport.js, Google OAuth.</p>
-                <button class="project-btn">View Github</button>
-                <button class="project-btn">View Live</button>
+                <div>
+                    <p>I noticed that it's difficult to find small pets for adoption rather than purchase, so I made Smallr. Smallr was designed to help shelters and rescues showcase their small pets up for adoption. It is a full CRUD web application that allows users to browse small pets up for adoption or list a pet for adoption. Shelters must create an account to be able to create posts, as well as edit and/or delete their posts. This project is hosted on Heroku.</p>
+                    <p>Node.js, Express.js, MongoDB, Mongoose, Passport.js, Google OAuth.</p>
+                <div class="btn-div">
+                    <button class="project-btn">View Github</button>
+                    <button class="project-btn">View Live</button>
+                </div>
+                </div>
             </div>
-        </section>
-        <section class="glowup slide"></section>
-        <section class="watchlist slide"></section>
-    </main>
+        </div>
+        <div class="glowup slide"></div>
+        <div class="watchlist slide"></div>
+    </section>
+    <script src="./app.js"></script>
 </body>
 </html>
