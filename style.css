@@ -94,6 +94,24 @@ nav {
 .secret-hover img {
   object-fit: cover;
   width: 80px;
+  animation: spin;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .headline h2 {
