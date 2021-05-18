@@ -1,6 +1,7 @@
 // CACHED ELEMENTS
 
 let mouse = document.querySelector('.cursor');
+let tap = document.querySelector('.cursor-text');
 
 
 // EVENT LISTENERS
@@ -21,7 +22,9 @@ function cursorHover(e) {
     const hovered = e.target;
     if (hovered.id == 'logo' || hovered.classList.contains('burger')) {
         mouse.classList.add('nav-active');
+        tap.innerText = 'Tap';
     } else {
         mouse.classList.remove('nav-active');
+        tap.innerText = '';
     }
 }
