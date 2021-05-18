@@ -1,0 +1,33 @@
+@media screen and (max-width: 500px) {
+  .cursor {
+    display: none;
+  }
+  .cursor-text {
+    display: none;
+  }
+  .line1,
+  .line2 {
+    width: 30px;
+  }
+  #logo {
+    font-size: 14px;
+  }
+  .landing video {
+    object-position: right;
+  }
+  .secret-hover,
+  .secret-hover img {
+    display: none;
+  }
+  .smile {
+    font-size: 22px;
+  }
+  .name {
+    text-decoration: none;
+  }
+  .headline h2 {
+    font-size: 16px;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+}

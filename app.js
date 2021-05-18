@@ -30,10 +30,12 @@ function cursorHover(e) {
         smile.style.display = 'none';
     } else if (hovered.classList.contains('name')){
         smile.style.display = 'block';
+        nameSpan.style.textDecoration = 'none';
     } else {
         mouse.classList.remove('nav-active');
         tap.innerText = '';
         smile.style.display = 'none';
+        nameSpan.style.textDecoration = 'underline';
     }
 }
 
