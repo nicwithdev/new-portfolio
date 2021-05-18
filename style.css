@@ -11,6 +11,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.cursor {
+  width: 35px;
+  height: 35px;
+  border: 3px solid blue;
+  border-radius: 50%;
+  position: absolute;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -31,15 +39,20 @@ nav {
   justify-content: center;
   align-items: center;
   clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+  -moz-clip-path: circle(50px at 100% -10%);
 }
 
 .nav-links a {
   list-style: none;
   color: rgb(20, 20, 20);
   text-decoration: none;
+  font-size: 40px;
 }
 
-.nav-links {
+.nav-links li {
+  padding: 50px 0px;
+  text-align: center;
   list-style: none;
 }
 
@@ -52,14 +65,16 @@ nav {
 
 .burger {
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .line1,
 .line2 {
   width: 45px;
-  height: 3px;
+  height: 2px;
   background-color: rgb(20, 20, 20);
   margin: 5px 0px;
+  pointer-events: none;
 }
 
 .landing {
@@ -97,6 +112,7 @@ nav {
   display: flex;
   align-items: center;
   font-size: 50px;
+  text-align: center;
 }
 
 .hello {
