@@ -7,6 +7,14 @@ let nameSpan = document.querySelector('.name');
 let smile = document.querySelector('.smile-img');
 let nav = document.querySelector('.navbar');
 let navLinks = document.querySelector('.link');
+let boardBtn = document.querySelector('.b-btn');
+let smallrBtn = document.querySelector('.s-btn');
+let glowBtn = document.querySelector('.g-btn');
+let watchBtn = document.querySelector('.w-btn');
+let boardTitle = document.querySelector('.b-title');
+let smallrTitle = document.querySelector('.s-title');
+let glowTitle = document.querySelector('.g-title');
+let watchTitle = document.querySelector('.w-title');
 
 
 // EVENT LISTENERS
