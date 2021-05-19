@@ -22,12 +22,18 @@
   .smile {
     font-size: 22px;
   }
-  .name {
-    text-decoration: none;
-  }
   .headline h2 {
     font-size: 16px;
     margin-left: 0px;
     margin-top: 50px;
+  }
+  .navbar {
+    display: block;
+    width: 100vw;
+  }
+  .nav-links {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 80px;
   }
 }

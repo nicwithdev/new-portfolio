@@ -46,7 +46,8 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  overflow-x: hidden;
+  height: 100%;
   background-color: #ffea29;
   z-index: 2;
   display: flex;
@@ -80,6 +81,7 @@ nav {
 .burger {
   margin-right: 30px;
   cursor: pointer;
+  z-index: 4;
 }
 
 .line1,
@@ -136,10 +138,6 @@ nav {
   font-weight: 400;
 }
 
-.name {
-  text-decoration: underline;
-}
-
 .secret-hover {
   margin-left: 30px;
   width: 80px;
@@ -178,4 +176,8 @@ nav {
 .nav-active {
   background-color: blue;
   transform: scale(2.5);
+}
+
+body.hide {
+  overflow: hidden;
 }
