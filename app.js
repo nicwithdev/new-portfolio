@@ -6,6 +6,7 @@ let burger = document.querySelector('.burger');
 let nameSpan = document.querySelector('.name');
 let smile = document.querySelector('.smile-img');
 let nav = document.querySelector('.navbar');
+let navLinks = document.querySelector('.link');
 
 
 // EVENT LISTENERS
@@ -13,7 +14,7 @@ let nav = document.querySelector('.navbar');
 window.addEventListener('mousemove', cursorMovement);
 window.addEventListener('mouseover', cursorHover);
 burger.addEventListener('click', toggleNav);
-nav.addEventListener('scroll', topPositionChange);
+navLinks.addEventListener('click', removeNav);
 
 
 // FUNCTIONS
@@ -56,7 +57,10 @@ function toggleNav(e) {
 }
 }
 
-
-function topPositionChange() {
-    nav.style["top"] = '0px';
+function removeNav() {
+    burger.classList.remove('active');
+    gsap.to(".line1", 0.5, { rotate: "0", y: 0 });
+    gsap.to(".line2", 0.5, { rotate: "0", y: 0 });
+    gsap.to(".navbar", 1, { clipPath: "circle(50px at 100% -10%)" });
+    document.body.classList.remove('hide');
 }
