@@ -75,6 +75,8 @@ nav {
 
 #logo {
   color: rgb(20, 20, 20);
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: 100;
   text-decoration: none;
   margin-left: 30px;
   font-size: 16px;
@@ -170,36 +172,34 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f0ece4;
-}
-
-#projects h1 {
-  font-size: 50px;
-  font-family: "Abril Fatface", sans-serif;
-  margin: 150px 0px 100px 0px;
-  font-weight: lighter;
-  letter-spacing: 2px;
-}
-
-.pro-contain {
-  height: 100%;
-  width: 90%;
-  margin-bottom: 100px;
-  background-color: #faf7f1;
-  padding: 100px;
-  border-radius: 30px;
 }
 
 .boardgamer,
 .smallr,
 .glowup,
 .watchlist {
-  min-height: 600px;
+  min-height: 100vh;
   width: 100%;
-  margin: 100px 0px;
-  background-color: #ffffff;
   display: flex;
-  border-radius: 30px;
+  padding: 200px 0px;
+}
+
+.boardgamer {
+  background-color: #fff;
+}
+
+.glowup {
+  background-color: #99a894;
+  color: white;
+}
+
+.smallr {
+  background-color: #fff6e6;
+}
+
+.watchlist {
+  background-color: rgb(20, 20, 20);
+  color: whitesmoke;
 }
 
 .project-desc {
@@ -211,9 +211,9 @@ nav {
 }
 
 .project-desc h2 {
-  font-family: "Abril Fatface";
-  font-weight: lighter;
-  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
   letter-spacing: 3px;
   margin-bottom: 50px;
 }
@@ -247,15 +247,23 @@ nav {
 }
 
 .btn-div {
-  margin: 40px 0px;
+  margin: 90px 0px;
 }
 
 .btn-div a {
   text-decoration: none;
   color: rgb(20, 20, 20);
-  padding: 10px;
+  padding: 13px 20px;
   border: 1px solid rgb(20, 20, 20);
-  margin: 0px 10px;
+  border-radius: 10px;
+  margin: 0px 25px;
+  background-color: white;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.boardgamer .btn-div a {
+  border: 2px solid black;
 }
 
 /* ANIMATIONS */

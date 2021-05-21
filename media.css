@@ -33,6 +33,26 @@
     text-align: center;
     margin-top: 80px;
   }
+  .smallr,
+  .watchlist {
+    flex-direction: column;
+  }
+  .boardgamer,
+  .glowup {
+    flex-direction: column-reverse;
+  }
+  .project-desc,
+  .section-img {
+    width: 100%;
+  }
+  .section-img img {
+    height: 350px;
+  }
+  #projects h2 {
+    margin-top: 40px;
+    letter-spacing: 3px;
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -41,5 +61,28 @@
   }
   .headline h2 {
     font-size: 18px;
+  }
+  .pro-contain {
+    width: 100%;
+  }
+  #projects h2 {
+    font-size: 35px;
+  }
+  .p-tags {
+    width: 90%;
+    font-size: 16px;
+  }
+  .section-img img {
+    height: 300px;
+  }
+  .boardgamer,
+  .smallr,
+  .glowup,
+  .watchlist {
+    padding: 100px 0px;
+  }
+  .btn-div a {
+    font-size: 18px;
+    margin: 0px 15px;
   }
 }

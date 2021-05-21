@@ -11,6 +11,10 @@ let boardBtn = document.querySelector('.b-btn');
 let smallrBtn = document.querySelector('.s-btn');
 let glowBtn = document.querySelector('.g-btn');
 let watchBtn = document.querySelector('.w-btn');
+let boardLive = document.querySelector('.b-live');
+let watchLive = document.querySelector('.w-live');
+let glowLive = document.querySelector('.g-live');
+let smallrLive = document.querySelector('.s-live');
 let boardTitle = document.querySelector('.b-title');
 let smallrTitle = document.querySelector('.s-title');
 let glowTitle = document.querySelector('.g-title');
@@ -23,6 +27,10 @@ window.addEventListener('mousemove', cursorMovement);
 window.addEventListener('mouseover', cursorHover);
 burger.addEventListener('click', toggleNav);
 navLinks.addEventListener('click', removeNav);
+boardBtn.addEventListener('mouseover', highlightBoard);
+watchBtn.addEventListener('mouseover', highlightWatch);
+glowBtn.addEventListener('mouseover', highlightGlow);
+smallrBtn.addEventListener('mouseover', highlightSmallr);
 
 
 // FUNCTIONS
@@ -46,6 +54,13 @@ function cursorHover(e) {
         mouse.classList.remove('nav-active');
         tap.innerText = '';
         smile.style.display = 'none';
+        boardTitle.style.backgroundColor = '#fff';
+        watchTitle.style.backgroundColor = 'rgb(20, 20, 20)';
+        watchTitle.style.color = 'white';
+        glowTitle.style.backgroundColor = '#99a894';
+        glowTitle.style.color = 'white';
+        smallrTitle.style.backgroundColor = '#fff6e6';
+
     }
 }
 
@@ -71,4 +86,19 @@ function removeNav() {
     gsap.to(".line2", 0.5, { rotate: "0", y: 0 });
     gsap.to(".navbar", 1, { clipPath: "circle(50px at 100% -10%)" });
     document.body.classList.remove('hide');
+}
+
+function highlightBoard() {
+    boardTitle.style.backgroundColor = 'yellow';
+}
+function highlightWatch() {
+    watchTitle.style.backgroundColor = 'yellow';
+    watchTitle.style.color = 'rgb(20, 20, 20)';
+}
+function highlightGlow() {
+    glowTitle.style.backgroundColor = 'yellow';
+    glowTitle.style.color = 'rgb(20, 20, 20)';
+}
+function highlightSmallr() {
+    smallrTitle.style.backgroundColor = 'yellow';
 }
