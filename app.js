@@ -27,10 +27,12 @@ let glowTitle = document.querySelector('.g-title');
 let watchTitle = document.querySelector('.w-title');
 let wave = document.querySelector('.wave');
 let self = document.querySelector('.left');
+let video = document.getElementById("vid");
 
 
 // EVENT LISTENERS
 
+window.onload = playVideo;
 window.addEventListener('mousemove', cursorMovement);
 window.addEventListener('mouseover', cursorHover);
 burger.addEventListener('click', toggleNav);
@@ -45,6 +47,7 @@ boardLive.addEventListener('mouseover', flipBoard);
 watchLive.addEventListener('mouseover', flipWatch);
 glowLive.addEventListener('mouseover', flipGlow);
 smallrLive.addEventListener('mouseover', flipSmallr);
+
 
 // FUNCTIONS
 
@@ -132,4 +135,8 @@ function flipGlow() {
 }
 function flipSmallr() {
     smallrPic.classList.add('flip');
+}
+
+function playVideo() {
+    video.play();
 }
