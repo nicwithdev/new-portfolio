@@ -53,6 +53,18 @@
     letter-spacing: 3px;
     font-size: 40px;
   }
+  .right p,
+  .right ul {
+    width: 90%;
+    font-size: 16px;
+  }
+  #about {
+    margin-top: 50px;
+  }
+  .left img {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -84,5 +96,25 @@
   .btn-div a {
     font-size: 18px;
     margin: 0px 15px;
+  }
+  #about {
+    margin-top: 170px;
+  }
+  .about-info {
+    flex-direction: column;
+  }
+  .wave {
+    border-radius: 0% 90% 0% 0%;
+  }
+  .right li {
+    font-size: 16px;
+  }
+  .right ul,
+  .right p {
+    width: 100%;
+  }
+  .left,
+  .right {
+    width: 100%;
   }
 }

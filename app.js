@@ -6,7 +6,9 @@ let burger = document.querySelector('.burger');
 let nameSpan = document.querySelector('.name');
 let smile = document.querySelector('.smile-img');
 let nav = document.querySelector('.navbar');
-let navLinks = document.querySelector('.link');
+let navLink1 = document.querySelector('.link1');
+let navLink2 = document.querySelector('.link2');
+let navLink3 = document.querySelector('.link3');
 let boardBtn = document.querySelector('.b-btn');
 let smallrBtn = document.querySelector('.s-btn');
 let glowBtn = document.querySelector('.g-btn');
@@ -30,7 +32,9 @@ let watchTitle = document.querySelector('.w-title');
 window.addEventListener('mousemove', cursorMovement);
 window.addEventListener('mouseover', cursorHover);
 burger.addEventListener('click', toggleNav);
-navLinks.addEventListener('click', removeNav);
+navLink1.addEventListener('click', removeNav);
+navLink2.addEventListener('click', removeNav);
+navLink3.addEventListener('click', removeNav);
 boardBtn.addEventListener('mouseover', highlightBoard);
 watchBtn.addEventListener('mouseover', highlightWatch);
 glowBtn.addEventListener('mouseover', highlightGlow);
@@ -91,7 +95,7 @@ function toggleNav(e) {
 }
 }
 
-function removeNav() {
+function removeNav(e) {
     burger.classList.remove('active');
     gsap.to(".line1", 0.5, { rotate: "0", y: 0 });
     gsap.to(".line2", 0.5, { rotate: "0", y: 0 });
