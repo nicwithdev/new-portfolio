@@ -57,7 +57,7 @@ function cursorMovement(e) {
 
 function cursorHover(e) {
     const hovered = e.target;
-    if (hovered.id == 'logo' || hovered.classList.contains('burger') || hovered.classList.contains('link') || hovered.classList.contains("project-btn")) {
+    if (hovered.id == 'logo' || hovered.classList.contains('burger') || hovered.classList.contains('link') || hovered.classList.contains("project-btn") || hovered.classList.contains('back-to-top') || hovered.classList.contains("contact-link")) {
         mouse.classList.add('nav-active');
         tap.innerText = 'Tap';
         smile.style.display = 'none';
