@@ -367,6 +367,11 @@ nav {
   margin-bottom: 20px;
 }
 
+.contact-info a {
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+}
+
 .foot-links {
   display: flex;
   align-items: center;
