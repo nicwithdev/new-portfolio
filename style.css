@@ -189,12 +189,11 @@ nav {
 }
 
 .glowup {
-  background-color: #99a894;
-  color: white;
+  background-color: #fff6e6;
 }
 
 .smallr {
-  background-color: #fff6e6;
+  background-color: #fff;
 }
 
 .watchlist {
@@ -213,7 +212,7 @@ nav {
 .project-desc h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 58px;
   letter-spacing: 3px;
   margin-bottom: 50px;
 }
@@ -262,8 +261,15 @@ nav {
   font-family: "Montserrat", sans-serif;
 }
 
-.boardgamer .btn-div a {
+.boardgamer .btn-div a,
+.smallr .btn-div a {
   border: 2px solid black;
+}
+
+/* ABOUT PAGE */
+
+#about {
+  min-height: 100vh;
 }
 
 /* ANIMATIONS */

@@ -65,9 +65,8 @@ function cursorHover(e) {
         boardTitle.style.backgroundColor = '#fff';
         watchTitle.style.backgroundColor = 'rgb(20, 20, 20)';
         watchTitle.style.color = 'white';
-        glowTitle.style.backgroundColor = '#99a894';
-        glowTitle.style.color = 'white';
-        smallrTitle.style.backgroundColor = '#fff6e6';
+        glowTitle.style.backgroundColor = '#fff6e6';
+        smallrTitle.style.backgroundColor = '#fff';
         smallrPic.classList.remove('flip');
         glowPic.classList.remove('flip');
         watchPic.classList.remove('flip');
