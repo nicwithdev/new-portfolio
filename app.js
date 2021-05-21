@@ -15,6 +15,10 @@ let boardLive = document.querySelector('.b-live');
 let watchLive = document.querySelector('.w-live');
 let glowLive = document.querySelector('.g-live');
 let smallrLive = document.querySelector('.s-live');
+let boardPic = document.querySelector('.b-pic');
+let watchPic = document.querySelector('.w-pic');
+let glowPic = document.querySelector('.g-pic');
+let smallrPic = document.querySelector('.s-pic');
 let boardTitle = document.querySelector('.b-title');
 let smallrTitle = document.querySelector('.s-title');
 let glowTitle = document.querySelector('.g-title');
@@ -31,6 +35,10 @@ boardBtn.addEventListener('mouseover', highlightBoard);
 watchBtn.addEventListener('mouseover', highlightWatch);
 glowBtn.addEventListener('mouseover', highlightGlow);
 smallrBtn.addEventListener('mouseover', highlightSmallr);
+boardLive.addEventListener('mouseover', flipBoard);
+watchLive.addEventListener('mouseover', flipWatch);
+glowLive.addEventListener('mouseover', flipGlow);
+smallrLive.addEventListener('mouseover', flipSmallr);
 
 
 // FUNCTIONS
@@ -60,6 +68,10 @@ function cursorHover(e) {
         glowTitle.style.backgroundColor = '#99a894';
         glowTitle.style.color = 'white';
         smallrTitle.style.backgroundColor = '#fff6e6';
+        smallrPic.classList.remove('flip');
+        glowPic.classList.remove('flip');
+        watchPic.classList.remove('flip');
+        boardPic.classList.remove('flip');
 
     }
 }
@@ -101,4 +113,17 @@ function highlightGlow() {
 }
 function highlightSmallr() {
     smallrTitle.style.backgroundColor = 'yellow';
+}
+
+function flipBoard() {
+    boardPic.classList.add('flip');
+}
+function flipWatch() {
+    watchPic.classList.add('flip');
+}
+function flipGlow() {
+    glowPic.classList.add('flip');
+}
+function flipSmallr() {
+    smallrPic.classList.add('flip');
 }

@@ -283,6 +283,21 @@ nav {
   }
 }
 
+.flip {
+  animation: photo-flip 1.5s;
+}
+
+@keyframes photo-flip {
+  25% {
+    transform: rotateY(180deg);
+    border-radius: 50%;
+  }
+  75% {
+    transform: rotateY(0deg);
+    border-radius: 30px;
+  }
+}
+
 /* JS TOGGLE CLASSES */
 
 .nav-active {
