@@ -25,6 +25,8 @@ let boardTitle = document.querySelector('.b-title');
 let smallrTitle = document.querySelector('.s-title');
 let glowTitle = document.querySelector('.g-title');
 let watchTitle = document.querySelector('.w-title');
+let wave = document.querySelector('.wave');
+let self = document.querySelector('.left');
 
 
 // EVENT LISTENERS
@@ -44,7 +46,6 @@ watchLive.addEventListener('mouseover', flipWatch);
 glowLive.addEventListener('mouseover', flipGlow);
 smallrLive.addEventListener('mouseover', flipSmallr);
 
-
 // FUNCTIONS
 
 
@@ -62,6 +63,9 @@ function cursorHover(e) {
         smile.style.display = 'none';
     } else if (hovered.classList.contains('name')){
         smile.style.display = 'block';
+    } else if (hovered.classList.contains('right') || hovered.classList.contains('left')) {
+        wave.style.borderRadius = '10% 100% 0% 0%';
+        wave.style.transitionDuration = '1.2s';
     } else {
         mouse.classList.remove('nav-active');
         tap.innerText = '';
@@ -75,7 +79,6 @@ function cursorHover(e) {
         glowPic.classList.remove('flip');
         watchPic.classList.remove('flip');
         boardPic.classList.remove('flip');
-
     }
 }
 
