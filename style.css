@@ -108,7 +108,7 @@ nav {
 
 .landing::after {
   content: "";
-  background-color: rgba(20, 20, 20, 0.5);
+  background-color: rgba(20, 20, 20, 0.2);
   width: 100%;
   height: 92vh;
   position: absolute;
@@ -417,10 +417,13 @@ nav {
 }
 
 @keyframes photo-flip {
-  25% {
-    transform: rotate(20deg);
+  33% {
+    transform: rotate(10deg);
   }
-  75% {
+  70% {
+    transform: rotate(-5deg);
+  }
+  100% {
     transform: rotate(0deg);
   }
 }

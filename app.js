@@ -142,9 +142,3 @@ function flipSmallr() {
 function playVideo() {
     video.play();
 }
-
-function animateSlides() {
-    controller = new ScrollMagic.Controller();
-    const slides = document.querySelectorAll('.slide');
-    
-}
