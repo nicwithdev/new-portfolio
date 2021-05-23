@@ -28,6 +28,8 @@ let watchTitle = document.querySelector('.w-title');
 let wave = document.querySelector('.wave');
 let self = document.querySelector('.left');
 let video = document.getElementById("vid");
+let controller;
+let slideScene;
 
 
 // EVENT LISTENERS
@@ -139,4 +141,10 @@ function flipSmallr() {
 
 function playVideo() {
     video.play();
+}
+
+function animateSlides() {
+    controller = new ScrollMagic.Controller();
+    const slides = document.querySelectorAll('.slide');
+    
 }
