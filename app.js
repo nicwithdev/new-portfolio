@@ -21,10 +21,6 @@ let boardPic = document.querySelector('.b-pic');
 let watchPic = document.querySelector('.w-pic');
 let glowPic = document.querySelector('.g-pic');
 let smallrPic = document.querySelector('.s-pic');
-let boardTitle = document.querySelector('.b-title');
-let smallrTitle = document.querySelector('.s-title');
-let glowTitle = document.querySelector('.g-title');
-let watchTitle = document.querySelector('.w-title');
 let wave = document.querySelector('.wave');
 let self = document.querySelector('.left');
 let video = document.getElementById("vid");
@@ -41,10 +37,6 @@ burger.addEventListener('click', toggleNav);
 navLink1.addEventListener('click', removeNav);
 navLink2.addEventListener('click', removeNav);
 navLink3.addEventListener('click', removeNav);
-boardBtn.addEventListener('mouseover', highlightBoard);
-watchBtn.addEventListener('mouseover', highlightWatch);
-glowBtn.addEventListener('mouseover', highlightGlow);
-smallrBtn.addEventListener('mouseover', highlightSmallr);
 boardLive.addEventListener('mouseover', flipBoard);
 watchLive.addEventListener('mouseover', flipWatch);
 glowLive.addEventListener('mouseover', flipGlow);
@@ -75,11 +67,6 @@ function cursorHover(e) {
         mouse.classList.remove('nav-active');
         tap.innerText = '';
         smile.style.display = 'none';
-        boardTitle.style.backgroundColor = '#fff';
-        watchTitle.style.backgroundColor = 'rgb(20, 20, 20)';
-        watchTitle.style.color = 'white';
-        glowTitle.style.backgroundColor = '#fff6e6';
-        smallrTitle.style.backgroundColor = '#fff';
         smallrPic.classList.remove('flip');
         glowPic.classList.remove('flip');
         watchPic.classList.remove('flip');
@@ -109,21 +96,6 @@ function removeNav(e) {
     gsap.to(".line2", 0.5, { rotate: "0", y: 0 });
     gsap.to(".navbar", 1, { clipPath: "circle(50px at 100% -10%)" });
     document.body.classList.remove('hide');
-}
-
-function highlightBoard() {
-    boardTitle.style.backgroundColor = 'yellow';
-}
-function highlightWatch() {
-    watchTitle.style.backgroundColor = 'yellow';
-    watchTitle.style.color = 'rgb(20, 20, 20)';
-}
-function highlightGlow() {
-    glowTitle.style.backgroundColor = 'yellow';
-    glowTitle.style.color = 'rgb(20, 20, 20)';
-}
-function highlightSmallr() {
-    smallrTitle.style.backgroundColor = 'yellow';
 }
 
 function flipBoard() {
