@@ -17,5 +17,4 @@
 <h2>Ice Box:</h2>
 <ul>
   <li>Implement scroll magic for more interactivity.</li>
-  <li>Working on a bug with autoplay of landing video on iPhone</li>
 <ul>
