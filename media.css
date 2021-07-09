@@ -128,8 +128,7 @@
     padding: 50px 0px;
   }
   .wave {
-    border-radius: 0% 90% 0% 0%;
-    min-height: 70vh;
+    display: none;
   }
   .right li {
     font-size: 18px;
