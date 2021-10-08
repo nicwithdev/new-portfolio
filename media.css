@@ -63,7 +63,8 @@
   }
   .left img {
     height: 230px;
-    width: 230px;
+    width: 220px;
+    object-fit: cover;
     margin-bottom: 50px;
     border-top: 3px solid yellow;
   }
@@ -80,6 +81,18 @@
   }
   .contact-info h2 {
     font-size: 55px;
+  }
+  #about {
+    min-height: 80vh;
+  }
+  #projects {
+    min-height: 80vh;
+  }
+  .smallr {
+    margin-bottom: -220px;
+  }
+  #contact {
+    min-height: 40vh;
   }
 }
 
@@ -120,8 +133,8 @@
     margin-top: 110px;
   }
   .left img {
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 210px;
   }
   #about h2 {
     display: none;
@@ -129,6 +142,10 @@
   .about-info {
     flex-direction: column;
     padding: 50px 0px;
+  }
+  .about-info p {
+    width: 100%;
+    padding: 0px 10px;
   }
   .wave {
     display: none;
@@ -161,5 +178,17 @@
   }
   .contact-info h2 {
     font-size: 50px;
+  }
+  #about {
+    min-height: 140vh;
+  }
+  #projects {
+    min-height: 100vh;
+  }
+  .smallr {
+    margin-bottom: 60px;
+  }
+  #contact {
+    min-height: 100vh;
   }
 }

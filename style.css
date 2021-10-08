@@ -428,21 +428,6 @@ nav {
   }
 }
 
-.bounce {
-  animation: bounce 2.5s infinite;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(5%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 
 /* JS TOGGLE CLASSES */
 
