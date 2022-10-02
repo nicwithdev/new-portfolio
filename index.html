@@ -1,172 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/icon-code.png" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./media.css" />
     <title>Nicole Witherall</title>
-</head>
-<body id="tops">
+  </head>
+  <body id="tops">
     <nav>
-        <h1><a href="https://www.linkedin.com/in/nicolewitherall/" target="_blank" id="logo">nicole witherall</a></h1>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-        </div>
+      <h1>
+        <a
+          href="https://www.linkedin.com/in/nicolewitherall/"
+          target="_blank"
+          id="logo"
+          >nicole witherall</a
+        >
+      </h1>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
     </nav>
     <main class="landing">
-        <video id="vid" src="./assets/landing-video.mp4" muted autoplay webkit-playsinline playsinline loop disablepictureinpicture preload="auto"></video>
-        <div class="headline">
-            <div class="smile">
-            <h1><span class="hello">Hello!</span>&nbsp;I'm <br /><span class="name">Nicole Witherall</span></h1>
-            <div class="secret-hover"><img class="smile-img" src="./assets/smile.png" /></div>
+      <video
+        id="vid"
+        src="./assets/landing-video.mp4"
+        muted
+        autoplay
+        webkit-playsinline
+        playsinline
+        loop
+        disablepictureinpicture
+        preload="auto"
+      ></video>
+      <div class="headline">
+        <div class="smile">
+          <h1>
+            <span class="hello">Hello!</span>&nbsp;I'm <br /><span class="name"
+              >Nicole Witherall</span
+            >
+          </h1>
+          <div class="secret-hover">
+            <img class="smile-img" src="./assets/smile.png" />
+          </div>
         </div>
-            <h2>Software Developer &nbsp; && &nbsp; People Person</h2>
-        </div>
+        <h2>Software Developer &nbsp; && &nbsp; People Person</h2>
+      </div>
     </main>
     <section id="projects">
-        <div class="pro-contain">
-        <div class="boardgamer slide">
-            <div class="project-desc">
-                <div class="title">
-                    <h2 class="b-title">Boardgamer</h2>
-                </div>
-                <div class="p-tags">
-                    <p>Board Gamer is a full CRUD web app that allows users to browse and search for popular, community-added board games. Registered users can create reviews on board games, create new board games to the database, and add them to their wishlist. This project is hosted on Heroku.</p>
-                    <p class="stack">Python, Django, Postgresql</p>
-                    <p><span>username:</span> guestlogin, <span>password:</span> welcome1234</p>
-                    <div class="btn-div">
-                        <a href="https://github.com/nicoleww/boardgamer" target="_blank" class="project-btn b-btn">Github</a>
-                        <a href="https://boardgamer-the-app.herokuapp.com/" target="_blank" class="project-btn b-live">Live</a>
-                    </div>
-                </div>
-            </div>
-            <div class="section-img">
-                <img class="b-pic" src="./assets/boardgamer-img.png" alt="A screen capture of my project called Board Gamer" />
-            </div>
-        </div>
+      <div class="pro-contain">
         <div class="watchlist slide">
-            <div class="section-img">
-                <img class="w-pic" src="./assets/watchlist.png" alt="A screen capture of my projects named Watch List" />
+          <div class="project-desc">
+            <div class="title">
+              <h2 class="g-title">Watchlist</h2>
             </div>
-            <div class="project-desc">
-                <div class="title">
-                    <h2 class="w-title">Watchlist</h2>
-                </div>
-                <div class="p-tags">
-                    <p>Watchlist is a web app that allows registered users to search for movies and add them to their own custom playlists via the OMBD API. Users can then utilize full CRUD capability to edit their playlist names and movies, or delete the playlist. This project is hosted on Heroku.</p>
-                    <p class="stack">Javascript, Node.js, Express.js, OMDB API, MongoDB, Mongoose, Passport.js, Google OAuth</p>
-                <div class="btn-div">
-                    <a href="https://github.com/nicoleww/watchlist" target="_blank" class="project-btn w-btn">Github</a>
-                    <a href="https://watchlist-the-app.herokuapp.com/" target="_blank" class="project-btn w-live">Live</a>
-                </div>
-                </div>
+            <div class="p-tags">
+              <p>
+                Watchlist is a web app that allows registered users to search
+                for movies and add them to their own custom playlists via the
+                OMBD API. Users can then utilize full CRUD capability to edit
+                their playlist names and movies, or delete the playlist. This
+                project is hosted on Heroku.
+              </p>
+              <p class="stack">
+                Javascript, Node.js, Express.js, OMDB API, MongoDB, Mongoose,
+                Passport.js, Google OAuth
+              </p>
+              <div class="btn-div">
+                <a
+                  href="https://github.com/nicoleww/watchlist"
+                  target="_blank"
+                  class="project-btn g-btn"
+                  >Github</a
+                >
+                <a
+                  href="https://watchlist-the-app.herokuapp.com/"
+                  target="_blank"
+                  class="project-btn g-live"
+                  >Live</a
+                >
+              </div>
             </div>
-        </div>
-        <div class="glowup slide">
-            <div class="project-desc">
-                <div class="title">
-                    <h2 class="g-title">GlowUp</h2>
-                </div>
-                <div class="p-tags">
-                    <p>Glow Up is a webapp that allows registered users to track their skincare and haircare progress through diary logs and photos. GlowUp was a collaboration effort, however, some of my contributions include: AWS S3 implementation, rendering data on webpages, forms, and CSS. This project is hosted on Heroku.</p>
-                    <p class="stack">Python, Django, Postgresql, AWS S3 Storage</p>
-                    <p><span>username:</span> guestlogin, <span>password:</span> Welcome2GlowUp</p>
-                    <div class="btn-div">
-                        <a href="https://github.com/nicoleww/glow-up" target="_blank" class="project-btn g-btn">Github</a>
-                        <a href="https://glowup-the-app.herokuapp.com/" target="_blank" class="project-btn g-live">Live</a>
-                    </div>
-                </div>
-            </div>
-            <div class="section-img">
-                <img class="g-pic" src="./assets/glowup.png" alt="A screen capture of my project called Glow Up" />
-            </div>
+          </div>
+          <div class="section-img">
+            <img
+              class="g-pic"
+              src="./assets/watchlist.png"
+              alt="A screen capture of my project called Watch List"
+            />
+          </div>
         </div>
         <div class="smallr slide">
-            <div class="section-img">
-                <img class="s-pic" src="./assets/calmly.png" alt="A screen capture of my projects named Calmly" />
+          <div class="section-img">
+            <img
+              class="s-pic"
+              src="./assets/calmly.png"
+              alt="A screen capture of my projects named Calmly"
+            />
+          </div>
+          <div class="project-desc">
+            <div class="title">
+              <h2 class="s-title">Calmly</h2>
             </div>
-            <div class="project-desc">
-                <div class="title">
-                    <h2 class="s-title">Calmly</h2>
-                </div>
-                <div class="p-tags">
-                    <p>Calmly is a web app that helps users sleep using nature sounds. Users can choose from select sounds that play with a corresponding image or video, as well as the ability to toggle a dark mode for better user experience. On window load, if the web app is being viewed on mobile, it will deliver images for the corresponding sounds, otherwise it will display video.</p>
-                    <p class="stack">React, Sass</p>
-                <div class="btn-div">
-                    <a href="https://github.com/nicoleww/calmly.v2" target="_blank" class="project-btn s-btn">Github</a>
-                    <a href="https://nicoleww.github.io/calmly.v2/" target="_blank" class="project-btn s-live">Live</a>
-                </div>
-                </div>
+            <div class="p-tags">
+              <p>
+                Calmly is a web app that helps users sleep using nature sounds.
+                Users can choose from select sounds that play with a
+                corresponding image or video, as well as the ability to toggle a
+                dark mode for better user experience. On window load, if the web
+                app is being viewed on mobile, it will deliver images for the
+                corresponding sounds, otherwise it will display video.
+              </p>
+              <p class="stack">React, Sass</p>
+              <div class="btn-div">
+                <a
+                  href="https://github.com/nicoleww/calmly.v2"
+                  target="_blank"
+                  class="project-btn s-btn"
+                  >Github</a
+                >
+                <a
+                  href="https://nicoleww.github.io/calmly.v2/"
+                  target="_blank"
+                  class="project-btn s-live"
+                  >Live</a
+                >
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
     <section id="about">
-        <div class="absolute">
+      <div class="absolute">
         <div class="about-info">
-        <div class="left">
-            <img class="bounce" src="./assets/me.jpg" alt="A photo of Nicole Witherall" />
-        </div>
-        <div class="right">
+          <div class="left">
+            <img
+              class="bounce"
+              src="./assets/me.jpg"
+              alt="A photo of Nicole Witherall"
+            />
+          </div>
+          <div class="right">
             <div class="me">
-                <h2>About Me</h2>
-                <p>I'm a developer with a professional background in the creative field of hairstyling, holding positions in: customer service, management, and education.
-                    Today as a developer I leverage the creative flair, problem-solving skills, and client-focused work style that I developed in my previous roles to build fun, responsive, and purposeful projects.
-                    I love to create and am constantly seeking out new opportunities to expand my knowledge or contribute to my community.
-                </p>
+              <h2>About Me</h2>
+              <p>
+                I'm a developer with a professional background in the creative
+                field of hairstyling, holding positions in: customer service,
+                management, and education. Today as a developer I leverage the
+                creative flair, problem-solving skills, and client-focused work
+                style that I developed in my previous roles to build fun,
+                responsive, and purposeful projects. I love to create and am
+                constantly seeking out new opportunities to expand my knowledge
+                or contribute to my community.
+              </p>
             </div>
             <div class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>React</li>
-                    <li>Sass</li>
-                    <li>Node</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>Postgresql</li>
-                </ul>
+              <h2>Skills</h2>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Sass</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Postgresql</li>
+              </ul>
             </div>
+          </div>
         </div>
-        </div>
-    </div>
-    <div class="wave"></div>
+      </div>
+      <div class="wave"></div>
     </section>
     <section id="contact">
-        <div class="contact-info">
-            <h2>Reach Out</h2>
-            <a class="email-me" href="mailto:nicwitherall@gmail.com">nicwitherall@gmail.com</a>
-            <div class="foot-links">
-                <a href="https://github.com/nicoleww" target="_blank"><img class="contact-link" src="./assets/github.png" /></a>
-                <a href="https://www.linkedin.com/in/nicolewitherall" target="_blank"><img class="contact-link linkedin" src="./assets/linkedin.png" /></a>
-            </div>
+      <div class="contact-info">
+        <h2>Reach Out</h2>
+        <a class="email-me" href="mailto:nicwitherall@gmail.com"
+          >nicwitherall@gmail.com</a
+        >
+        <div class="foot-links">
+          <a href="https://github.com/nicoleww" target="_blank"
+            ><img class="contact-link" src="./assets/github.png"
+          /></a>
+          <a href="https://www.linkedin.com/in/nicolewitherall" target="_blank"
+            ><img class="contact-link linkedin" src="./assets/linkedin.png"
+          /></a>
         </div>
-        <div class="top">
-            <a href="#tops" class="back-to-top">Back to Top Pls!</a>
-        </div>
+      </div>
+      <div class="top">
+        <a href="#tops" class="back-to-top">Back to Top Pls!</a>
+      </div>
     </section>
     <div class="navbar">
-        <ul class="nav-links">
+      <ul class="nav-links">
         <li><a href="#projects" class="link1">Projects</a></li>
         <li><a href="#about" class="link2">About</a></li>
         <li><a href="#contact" class="link3">Contact</a></li>
-        </ul>
+      </ul>
     </div>
     <div class="cursor">
-        <span class="cursor-text"></span>
+      <span class="cursor-text"></span>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
+      integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"
+      integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>

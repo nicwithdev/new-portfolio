@@ -175,32 +175,14 @@ nav {
   align-items: center;
 }
 
-.boardgamer,
 .smallr,
-.glowup,
 .watchlist {
   min-height: 100vh;
   width: 100%;
   display: flex;
   padding: 200px 0px;
   position: relative;
-}
-
-.boardgamer {
   background-color: #fff;
-}
-
-.glowup {
-  background-color: #fff6e6;
-}
-
-.smallr {
-  background-color: #fff;
-}
-
-.watchlist {
-  background-color: rgb(20, 20, 20);
-  color: whitesmoke;
 }
 
 .project-desc {
@@ -261,11 +243,6 @@ nav {
   background-color: white;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
-}
-
-.boardgamer .btn-div a,
-.smallr .btn-div a {
-  border: 2px solid black;
 }
 
 /* ABOUT PAGE */
@@ -427,7 +404,6 @@ nav {
     transform: rotate(0deg);
   }
 }
-
 
 /* JS TOGGLE CLASSES */
 
