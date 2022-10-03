@@ -13,8 +13,4 @@
 </ul>
 <h2>Getting Started</h2>
 <p>Hello! Thank you for your interest in my portfolio.</p>
-<p>You can view the deployed link <a href="https://nicoleww.github.io/new-portfolio">HERE</a>.</p>
-<h2>Ice Box:</h2>
-<ul>
-  <li>Implement scroll magic for more interactivity.</li>
-<ul>
+<p>You can view the deployed link <a href="https://nicolewitherall.com">HERE</a>.</p>
